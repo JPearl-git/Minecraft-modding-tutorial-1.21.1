@@ -21,6 +21,12 @@ public class ModItems
     // This creates our custom chisel item
     public static final Item CHISEL = registerItem("chisel", new ChiselItem(new Item.Settings().maxDamage(32)));
 
+    //This creates our custom food
+    public static final Item CAULIFLOWER = registerItem("cauliflower", new Item(new Item.Settings().food(ModFoodComponents.CAULIFLOWER)));
+
+    // This creates our custom fuel
+    public static final Item STARLIGHT_ASHES = registerItem("starlight_ashes", new Item(new Item.Settings()));
+
     // This function will register the items created by the mod
     private static Item registerItem(String name, Item item)
     {
