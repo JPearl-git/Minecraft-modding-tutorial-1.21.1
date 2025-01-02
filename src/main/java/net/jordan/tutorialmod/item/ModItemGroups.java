@@ -36,6 +36,21 @@ public class ModItemGroups
                         entries.add(ModBlocks.PINK_GARNET_DEEPSLATE_ORE);
                     }).build());
 
+    public static final ItemGroup SILVER_GROUP = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(TutorialMod.MOD_ID, "silver"),
+            FabricItemGroup.builder()
+                    .icon(() -> new ItemStack(ModBlocks.PINK_GARNET_BLOCK))
+                    .displayName((Text.translatable("itemgroup.tutorialmod.silver")))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModBlocks.SILVER_BLOCK);
+                        entries.add(ModBlocks.RAW_SILVER_BLOCK);
+                        entries.add(ModBlocks.SILVER_ORE);
+                        entries.add(ModBlocks.SILVER_DEEPSLATE_ORE);
+
+                        entries.add(ModItems.RAW_SILVER);
+                        entries.add(ModItems.SILVER_INGOT);
+                    }).build());
+
     public static void registerItemGroups()
     {
         TutorialMod.LOGGER.info("Registering Item Groups for " + TutorialMod.MOD_ID);

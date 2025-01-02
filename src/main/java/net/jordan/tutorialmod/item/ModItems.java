@@ -14,6 +14,9 @@ public class ModItems
     public static final Item PINK_GARNET = registerItem("pink_garnet", new Item(new Item.Settings()));
     public static final Item RAW_PINK_GARNET = registerItem("raw_pink_garnet", new Item(new Item.Settings()));
 
+    public static final Item RAW_SILVER = registerItem("raw_silver", new Item(new Item.Settings()));
+    public static final Item SILVER_INGOT = registerItem("silver_ingot", new Item(new Item.Settings()));
+
     // This function will register the items created by the mod
     private static Item registerItem(String name, Item item)
     {

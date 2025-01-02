@@ -3,6 +3,8 @@
   "values": [
     "tutorialmod:raw_pink_garnet_block",
     "tutorialmod:pink_garnet_ore",
-    "tutorialmod:silver_ore_block"
+
+    "tutorialmod:raw_silver_block",
+    "tutorialmod:silver_ore"
   ]
 }

@@ -8,8 +8,17 @@
   "block.tutorialmod.pink_garnet_ore": "Pink Garnet Ore",
   "block.tutorialmod.pink_garnet_deepslate_ore": "Pink Garnet Deepslate Ore",
 
-  "block.tutorialmod.silver_ore_block": "Silver Ore",
+  "item.tutorialmod.silver_ingot": "Silver Ingot",
+  "item.tutorialmod.raw_silver": "Raw Silver",
+
+  "block.tutorialmod.silver_block": "Block of Silver",
+  "block.tutorialmod.raw_silver_block": "Block of Raw Silver",
+
+  "block.tutorialmod.silver_ore": "Silver Ore",
+  "block.tutorialmod.silver_deepslate_ore": "Silver Deepslate Ore",
 
   "itemgroup.tutorialmod.pink_garnet_items": "Pink Garnet Items",
-  "itemgroup.tutorialmod.pink_garnet_blocks": "Pink Garnet Blocks"
+  "itemgroup.tutorialmod.pink_garnet_blocks": "Pink Garnet Blocks",
+
+  "itemgroup.tutorialmod.silver": "Silver"
 }

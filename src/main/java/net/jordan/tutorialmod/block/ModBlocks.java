@@ -45,10 +45,33 @@ public class ModBlocks
                             .sounds(BlockSoundGroup.DEEPSLATE)
             ));
 
-    public static final Block SILVER_ORE_BLOCK = registerBlock("silver_ore_block",
+
+    public static final Block SILVER_BLOCK = registerBlock("silver_block",
+            new Block(AbstractBlock.Settings.create()
+                    .strength(4f)
+                    .requiresTool()
+                    .sounds(BlockSoundGroup.METAL)
+            ));
+
+    public static final Block RAW_SILVER_BLOCK = registerBlock("raw_silver_block",
             new Block(AbstractBlock.Settings.create()
                     .strength(3f)
                     .requiresTool()
+            ));
+
+    public static Block SILVER_ORE = registerBlock("silver_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(2,5),
+                    AbstractBlock.Settings.create()
+                            .strength(3f)
+                            .requiresTool()
+            ));
+
+    public static Block SILVER_DEEPSLATE_ORE = registerBlock("silver_deepslate_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(3,6),
+                    AbstractBlock.Settings.create()
+                            .strength(4f)
+                            .requiresTool()
+                            .sounds(BlockSoundGroup.DEEPSLATE)
             ));
 
     private static Block registerBlock(String name, Block block)
@@ -70,7 +93,8 @@ public class ModBlocks
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
             entries.add(ModBlocks.PINK_GARNET_BLOCK);
             entries.add(ModBlocks.RAW_PINK_GARNET_BLOCK);
-            entries.add(ModBlocks.SILVER_ORE_BLOCK);
+            entries.add(ModBlocks.SILVER_BLOCK);
+            entries.add(ModBlocks.RAW_SILVER_BLOCK);
         });
     }
 }
