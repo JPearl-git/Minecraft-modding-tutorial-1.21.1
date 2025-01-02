@@ -2,6 +2,7 @@ package net.jordan.tutorialmod.block;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.jordan.tutorialmod.TutorialMod;
+import net.jordan.tutorialmod.block.custom.MagicBlock;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.ExperienceDroppingBlock;
@@ -74,6 +75,16 @@ public class ModBlocks
                             .sounds(BlockSoundGroup.DEEPSLATE)
             ));
 
+    public static final Block MAGIC_BLOCK = registerBlock("magic_block",
+            new MagicBlock(AbstractBlock.Settings.create()
+                    .strength(1f)
+                    .requiresTool()
+            ));
+
+
+    /*
+    REQUIRED FUNCTIONS
+     */
     private static Block registerBlock(String name, Block block)
     {
         registerBlockItem(name, block);
