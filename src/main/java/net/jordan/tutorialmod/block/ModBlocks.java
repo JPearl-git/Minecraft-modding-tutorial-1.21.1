@@ -28,6 +28,12 @@ public class ModBlocks
                     .requiresTool()
             ));
 
+    public static final Block SILVER_ORE_BLOCK = registerBlock("silver_ore_block",
+            new Block(AbstractBlock.Settings.create()
+                    .strength(3f)
+                    .requiresTool()
+            ));
+
     private static Block registerBlock(String name, Block block)
     {
         registerBlockItem(name, block);
@@ -47,6 +53,7 @@ public class ModBlocks
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
             entries.add(ModBlocks.PINK_GARNET_BLOCK);
             entries.add(ModBlocks.RAW_PINK_GARNET_BLOCK);
+            entries.add(ModBlocks.SILVER_ORE_BLOCK);
         });
     }
 }
