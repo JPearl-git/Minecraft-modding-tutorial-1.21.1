@@ -1,6 +1,7 @@
 package net.jordan.tutorialmod.block.custom;
 
 import net.jordan.tutorialmod.item.ModItems;
+import net.jordan.tutorialmod.util.ModTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.Entity;
@@ -43,13 +44,18 @@ public class MagicBlock extends Block
         // Only execute if entity is an item
         if(entity instanceof ItemEntity itemEntity)
         {
-            // Only execute if item is Raw Pink Garnet
-            if(itemEntity.getStack().getItem() == ModItems.RAW_PINK_GARNET)
+            // Only execute if item has the valid tag
+            if(isValidItem(itemEntity.getStack()))
                 // Converts all raw pink garnet to diamonds
                 itemEntity.setStack(new ItemStack(Items.DIAMOND, itemEntity.getStack().getCount()));
         }
 
         super.onSteppedOn(world, pos, state, entity);
+    }
+
+    private boolean isValidItem(ItemStack stack)
+    {
+        return stack.isIn(ModTags.Items.TRANSFORMABLE_ITEMS);
     }
 
     @Override
