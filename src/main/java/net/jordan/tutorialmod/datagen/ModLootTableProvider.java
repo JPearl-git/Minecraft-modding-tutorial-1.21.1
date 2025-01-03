@@ -31,17 +31,49 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider
     @Override
     public void generate()
     {
+        //region Pink Garnet drops
         addDrop(ModBlocks.PINK_GARNET_BLOCK);
         addDrop(ModBlocks.RAW_PINK_GARNET_BLOCK);
-        addDrop(ModBlocks.SILVER_BLOCK);
-        addDrop(ModBlocks.RAW_SILVER_BLOCK);
-        addDrop(ModBlocks.MAGIC_BLOCK);
 
         addDrop(ModBlocks.PINK_GARNET_ORE, oreDrops(ModBlocks.PINK_GARNET_ORE, ModItems.RAW_PINK_GARNET));
         addDrop(ModBlocks.PINK_GARNET_DEEPSLATE_ORE, multipleOreDrops(ModBlocks.PINK_GARNET_DEEPSLATE_ORE, ModItems.RAW_PINK_GARNET, 3, 7));
 
+        addDrop(ModBlocks.PINK_GARNET_STAIRS);
+        addDrop(ModBlocks.PINK_GARNET_SLAB, slabDrops(ModBlocks.PINK_GARNET_SLAB));
+
+        addDrop(ModBlocks.PINK_GARNET_BUTTON);
+        addDrop(ModBlocks.PINK_GARNET_PRESSURE_PLATE);
+
+        addDrop(ModBlocks.PINK_GARNET_WALL);
+        addDrop(ModBlocks.PINK_GARNET_FENCE);
+        addDrop(ModBlocks.PINK_GARNET_FENCE_GATE);
+
+        addDrop(ModBlocks.PINK_GARNET_DOOR, doorDrops(ModBlocks.PINK_GARNET_DOOR));
+        addDrop(ModBlocks.PINK_GARNET_TRAPDOOR);
+        //endregion
+
+        //region Silver drops
+        addDrop(ModBlocks.SILVER_BLOCK);
+        addDrop(ModBlocks.RAW_SILVER_BLOCK);
+        
         addDrop(ModBlocks.SILVER_ORE, oreDrops(ModBlocks.SILVER_ORE, ModItems.RAW_SILVER));
         addDrop(ModBlocks.SILVER_DEEPSLATE_ORE, multipleOreDrops(ModBlocks.SILVER_DEEPSLATE_ORE, ModItems.RAW_SILVER, 2, 5));
+
+        addDrop(ModBlocks.SILVER_STAIRS);
+        addDrop(ModBlocks.SILVER_SLAB, slabDrops(ModBlocks.SILVER_SLAB));
+
+        addDrop(ModBlocks.SILVER_BUTTON);
+        addDrop(ModBlocks.SILVER_PRESSURE_PLATE);
+
+        addDrop(ModBlocks.SILVER_WALL);
+        addDrop(ModBlocks.SILVER_FENCE);
+        addDrop(ModBlocks.SILVER_FENCE_GATE);
+
+        addDrop(ModBlocks.SILVER_DOOR, doorDrops(ModBlocks.SILVER_DOOR));
+        addDrop(ModBlocks.SILVER_TRAPDOOR);
+        //endregion
+
+        addDrop(ModBlocks.MAGIC_BLOCK);
     }
 
     public LootTable.Builder multipleOreDrops(Block drop, Item item, float minDrops, float maxDrops) {

@@ -40,12 +40,25 @@ public class ModItemGroups
                         entries.add(ModBlocks.PINK_GARNET_DEEPSLATE_ORE);
 
                         entries.add(ModBlocks.MAGIC_BLOCK);
+
+                        entries.add(ModBlocks.PINK_GARNET_STAIRS);
+                        entries.add(ModBlocks.PINK_GARNET_SLAB);
+
+                        entries.add(ModBlocks.PINK_GARNET_BUTTON);
+                        entries.add(ModBlocks.PINK_GARNET_PRESSURE_PLATE);
+
+                        entries.add(ModBlocks.PINK_GARNET_WALL);
+                        entries.add(ModBlocks.PINK_GARNET_FENCE);
+                        entries.add(ModBlocks.PINK_GARNET_FENCE_GATE);
+
+                        entries.add(ModBlocks.PINK_GARNET_DOOR);
+                        entries.add(ModBlocks.PINK_GARNET_TRAPDOOR);
                     }).build());
 
     public static final ItemGroup SILVER_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(TutorialMod.MOD_ID, "silver"),
             FabricItemGroup.builder()
-                    .icon(() -> new ItemStack(ModBlocks.PINK_GARNET_BLOCK))
+                    .icon(() -> new ItemStack(ModBlocks.SILVER_BLOCK))
                     .displayName((Text.translatable("itemgroup.tutorialmod.silver")))
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.SILVER_BLOCK);
@@ -55,6 +68,19 @@ public class ModItemGroups
 
                         entries.add(ModItems.RAW_SILVER);
                         entries.add(ModItems.SILVER_INGOT);
+
+                        entries.add(ModBlocks.SILVER_STAIRS);
+                        entries.add(ModBlocks.SILVER_SLAB);
+
+                        entries.add(ModBlocks.SILVER_BUTTON);
+                        entries.add(ModBlocks.SILVER_PRESSURE_PLATE);
+
+                        entries.add(ModBlocks.SILVER_WALL);
+                        entries.add(ModBlocks.SILVER_FENCE);
+                        entries.add(ModBlocks.SILVER_FENCE_GATE);
+
+                        entries.add(ModBlocks.SILVER_DOOR);
+                        entries.add(ModBlocks.SILVER_TRAPDOOR);
                     }).build());
 
     public static void registerItemGroups()
