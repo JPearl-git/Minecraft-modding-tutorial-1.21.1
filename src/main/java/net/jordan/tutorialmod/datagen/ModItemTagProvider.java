@@ -6,6 +6,7 @@ import net.jordan.tutorialmod.item.ModItems;
 import net.jordan.tutorialmod.util.ModTags;
 import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.registry.tag.ItemTags;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -27,5 +28,22 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider
                 .add(Items.COAL)
                 .add(Items.STICK)
                 .add(Items.APPLE);
+
+        // This helps items get the correct enchantments
+        getOrCreateTagBuilder(ItemTags.SWORDS)
+                .add(ModItems.PINK_GARNET_SWORD)
+                .add(ModItems.SILVER_SWORD);
+        getOrCreateTagBuilder(ItemTags.SHOVELS)
+                .add(ModItems.PINK_GARNET_SHOVEL)
+                .add(ModItems.SILVER_SHOVEL);
+        getOrCreateTagBuilder(ItemTags.PICKAXES)
+                .add(ModItems.PINK_GARNET_PICKAXE)
+                .add(ModItems.SILVER_PICKAXE);
+        getOrCreateTagBuilder(ItemTags.AXES)
+                .add(ModItems.PINK_GARNET_AXE)
+                .add(ModItems.SILVER_AXE);
+        getOrCreateTagBuilder(ItemTags.HOES)
+                .add(ModItems.PINK_GARNET_HOE)
+                .add(ModItems.SILVER_HOE);
     }
 }

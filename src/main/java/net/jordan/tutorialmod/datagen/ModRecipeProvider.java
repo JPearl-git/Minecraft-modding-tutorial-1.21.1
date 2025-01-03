@@ -8,7 +8,9 @@ import net.jordan.tutorialmod.item.ModItems;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
+import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
@@ -24,6 +26,66 @@ public class ModRecipeProvider extends FabricRecipeProvider
         super(output, registriesFuture);
     }
 
+    public void createSwordRecipe(RecipeExporter exporter, RecipeCategory category, Item output, Item input)
+    {
+        ShapedRecipeJsonBuilder.create(category, output)
+                .pattern(" R ")
+                .pattern(" R ")
+                .pattern(" S ")
+                .input('R', input)
+                .input('S', Items.STICK)
+                .criterion(hasItem(input), conditionsFromItem(input))
+                .offerTo(exporter);
+    }
+
+    public void createShovelRecipe(RecipeExporter exporter, RecipeCategory category, Item output, Item input)
+    {
+        ShapedRecipeJsonBuilder.create(category, output)
+                .pattern(" R ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('R', input)
+                .input('S', Items.STICK)
+                .criterion(hasItem(input), conditionsFromItem(input))
+                .offerTo(exporter);
+    }
+
+    public void createPickaxeRecipe(RecipeExporter exporter, RecipeCategory category, Item output, Item input)
+    {
+        ShapedRecipeJsonBuilder.create(category, output)
+                .pattern("RRR")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('R', input)
+                .input('S', Items.STICK)
+                .criterion(hasItem(input), conditionsFromItem(input))
+                .offerTo(exporter);
+    }
+
+    public void createAxeRecipe(RecipeExporter exporter, RecipeCategory category, Item output, Item input)
+    {
+        ShapedRecipeJsonBuilder.create(category, output)
+                .pattern("RR ")
+                .pattern("RS ")
+                .pattern(" S ")
+                .input('R', input)
+                .input('S', Items.STICK)
+                .criterion(hasItem(input), conditionsFromItem(input))
+                .offerTo(exporter);
+    }
+
+    public void createHoeRecipe(RecipeExporter exporter, RecipeCategory category, Item output, Item input)
+    {
+        ShapedRecipeJsonBuilder.create(category, output)
+                .pattern("RR ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('R', input)
+                .input('S', Items.STICK)
+                .criterion(hasItem(input), conditionsFromItem(input))
+                .offerTo(exporter);
+    }
+
     @Override
     public void generate(RecipeExporter recipeExporter)
     {
@@ -34,6 +96,12 @@ public class ModRecipeProvider extends FabricRecipeProvider
         offerBlasting(recipeExporter, PINK_GARNET_SMELTABLES, RecipeCategory.MISC, ModItems.PINK_GARNET, 0.25f, 100, "pink_garnet");
         offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModItems.PINK_GARNET, RecipeCategory.DECORATIONS, ModBlocks.PINK_GARNET_BLOCK);
         offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModItems.RAW_PINK_GARNET, RecipeCategory.DECORATIONS, ModBlocks.RAW_PINK_GARNET_BLOCK);
+
+        createSwordRecipe(recipeExporter, RecipeCategory.COMBAT, ModItems.PINK_GARNET_SWORD, ModItems.PINK_GARNET);
+        createShovelRecipe(recipeExporter, RecipeCategory.TOOLS, ModItems.PINK_GARNET_SHOVEL, ModItems.PINK_GARNET);
+        createPickaxeRecipe(recipeExporter, RecipeCategory.TOOLS, ModItems.PINK_GARNET_PICKAXE, ModItems.PINK_GARNET);
+        createAxeRecipe(recipeExporter, RecipeCategory.TOOLS, ModItems.PINK_GARNET_AXE, ModItems.PINK_GARNET);
+        createHoeRecipe(recipeExporter, RecipeCategory.TOOLS, ModItems.PINK_GARNET_HOE, ModItems.PINK_GARNET);
 
         createStairsRecipe(ModBlocks.PINK_GARNET_STAIRS, Ingredient.ofItems(ModBlocks.PINK_GARNET_BLOCK))
                 .criterion(hasItem(ModBlocks.PINK_GARNET_BLOCK), conditionsFromItem(ModBlocks.PINK_GARNET_BLOCK))
@@ -79,6 +147,12 @@ public class ModRecipeProvider extends FabricRecipeProvider
         offerBlasting(recipeExporter, SILVER_SMELTABLES, RecipeCategory.MISC, ModItems.SILVER_INGOT, 0.25f, 100, "silver");
         offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModItems.SILVER_INGOT, RecipeCategory.DECORATIONS, ModBlocks.SILVER_BLOCK);
         offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModItems.RAW_SILVER, RecipeCategory.DECORATIONS, ModBlocks.RAW_SILVER_BLOCK);
+
+        createSwordRecipe(recipeExporter, RecipeCategory.COMBAT, ModItems.SILVER_SWORD, ModItems.SILVER_INGOT);
+        createShovelRecipe(recipeExporter, RecipeCategory.TOOLS, ModItems.SILVER_SHOVEL, ModItems.SILVER_INGOT);
+        createPickaxeRecipe(recipeExporter, RecipeCategory.TOOLS, ModItems.SILVER_PICKAXE, ModItems.SILVER_INGOT);
+        createAxeRecipe(recipeExporter, RecipeCategory.TOOLS, ModItems.SILVER_AXE, ModItems.SILVER_INGOT);
+        createHoeRecipe(recipeExporter, RecipeCategory.TOOLS, ModItems.SILVER_HOE, ModItems.SILVER_INGOT);
 
         createStairsRecipe(ModBlocks.SILVER_STAIRS, Ingredient.ofItems(ModBlocks.SILVER_BLOCK))
                 .criterion(hasItem(ModBlocks.SILVER_BLOCK), conditionsFromItem(ModBlocks.SILVER_BLOCK))

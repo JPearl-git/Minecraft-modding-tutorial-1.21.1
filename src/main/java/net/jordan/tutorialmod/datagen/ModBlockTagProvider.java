@@ -3,6 +3,7 @@ package net.jordan.tutorialmod.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.jordan.tutorialmod.block.ModBlocks;
+import net.jordan.tutorialmod.util.ModTags;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
 
@@ -38,8 +39,14 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider
         getOrCreateTagBuilder(BlockTags.FENCE_GATES).add(ModBlocks.PINK_GARNET_FENCE_GATE);
         getOrCreateTagBuilder(BlockTags.WALLS).add(ModBlocks.PINK_GARNET_WALL);
 
+        getOrCreateTagBuilder(ModTags.Blocks.NEEDS_PINK_GARNET_TOOL)
+                .addTag(BlockTags.NEEDS_IRON_TOOL);
+
         getOrCreateTagBuilder(BlockTags.FENCES).add(ModBlocks.SILVER_FENCE);
         getOrCreateTagBuilder(BlockTags.FENCE_GATES).add(ModBlocks.SILVER_FENCE_GATE);
         getOrCreateTagBuilder(BlockTags.WALLS).add(ModBlocks.SILVER_WALL);
+
+        getOrCreateTagBuilder(ModTags.Blocks.NEEDS_SILVER_TOOL)
+                .addTag(BlockTags.NEEDS_IRON_TOOL);
     }
 }

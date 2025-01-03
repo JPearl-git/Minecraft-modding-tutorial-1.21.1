@@ -22,6 +22,12 @@ public class ModItemGroups
                         entries.add(ModItems.PINK_GARNET);
                         entries.add(ModItems.RAW_PINK_GARNET);
 
+                        entries.add(ModItems.PINK_GARNET_SWORD);
+                        entries.add(ModItems.PINK_GARNET_SHOVEL);
+                        entries.add(ModItems.PINK_GARNET_PICKAXE);
+                        entries.add(ModItems.PINK_GARNET_AXE);
+                        entries.add(ModItems.PINK_GARNET_HOE);
+
                         entries.add(ModItems.CHISEL);
                         entries.add(ModItems.CAULIFLOWER);
                         entries.add(ModItems.STARLIGHT_ASHES);
@@ -67,6 +73,12 @@ public class ModItemGroups
                         entries.add(ModBlocks.RAW_SILVER_BLOCK);
                         entries.add(ModBlocks.SILVER_ORE);
                         entries.add(ModBlocks.SILVER_DEEPSLATE_ORE);
+
+                        entries.add(ModItems.SILVER_SWORD);
+                        entries.add(ModItems.SILVER_SHOVEL);
+                        entries.add(ModItems.SILVER_PICKAXE);
+                        entries.add(ModItems.SILVER_AXE);
+                        entries.add(ModItems.SILVER_HOE);
 
                         entries.add(ModItems.RAW_SILVER);
                         entries.add(ModItems.SILVER_INGOT);

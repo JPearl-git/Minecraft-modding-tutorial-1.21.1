@@ -1,6 +1,12 @@
 {
   "item.tutorialmod.pink_garnet": "Pink Garnet",
   "item.tutorialmod.raw_pink_garnet": "Raw Pink Garnet",
+  
+  "item.tutorialmod.pink_garnet_sword": "Pink Garnet Sword",
+  "item.tutorialmod.pink_garnet_shovel": "Pink Garnet Shovel",
+  "item.tutorialmod.pink_garnet_pickaxe": "Pink Garnet Pickaxe",
+  "item.tutorialmod.pink_garnet_axe": "Pink Garnet Axe",
+  "item.tutorialmod.pink_garnet_hoe": "Pink Garnet Hoe",
 
   "block.tutorialmod.pink_garnet_block": "Block of Pink Garnet",
   "block.tutorialmod.raw_pink_garnet_block": "Block of Raw Pink Garnet",
@@ -37,6 +43,12 @@
 
   "item.tutorialmod.silver_ingot": "Silver Ingot",
   "item.tutorialmod.raw_silver": "Raw Silver",
+
+  "item.tutorialmod.silver_sword": "Silver Sword",
+  "item.tutorialmod.silver_shovel": "Silver Shovel",
+  "item.tutorialmod.silver_pickaxe": "Silver Pickaxe",
+  "item.tutorialmod.silver_axe": "Silver Axe",
+  "item.tutorialmod.silver_hoe": "Silver Hoe",
 
   "block.tutorialmod.silver_block": "Block of Silver",
   "block.tutorialmod.raw_silver_block": "Block of Raw Silver",
