@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.jordan.tutorialmod.TutorialMod;
 import net.jordan.tutorialmod.item.custom.ChiselItem;
 import net.jordan.tutorialmod.item.custom.HammerItem;
+import net.jordan.tutorialmod.item.custom.ModArmorItem;
 import net.minecraft.item.*;
 import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.registry.Registries;
@@ -47,7 +48,7 @@ public class ModItems
             ));
 
     public static final Item PINK_GARNET_HELMET = registerItem("pink_garnet_helmet",
-            new ArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
+            new ModArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
                     .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(15))
             ));
     public static final Item PINK_GARNET_CHESTPLATE = registerItem("pink_garnet_chestplate",
@@ -93,7 +94,7 @@ public class ModItems
                     .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.SILVER, 7, -3.4f))
             ));
     public static final Item SILVER_HELMET = registerItem("silver_helmet",
-            new ArmorItem(ModArmorMaterials.SILVER_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
+            new ModArmorItem(ModArmorMaterials.SILVER_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
                     .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(15))
             ));
     public static final Item SILVER_CHESTPLATE = registerItem("silver_chestplate",
