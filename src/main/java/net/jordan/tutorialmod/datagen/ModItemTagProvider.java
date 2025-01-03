@@ -45,5 +45,17 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider
         getOrCreateTagBuilder(ItemTags.HOES)
                 .add(ModItems.PINK_GARNET_HOE)
                 .add(ModItems.SILVER_HOE);
+
+        getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.PINK_GARNET_HELMET)
+                .add(ModItems.PINK_GARNET_CHESTPLATE)
+                .add(ModItems.PINK_GARNET_LEGGINGS)
+                .add(ModItems.PINK_GARNET_BOOTS);
+
+        getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.SILVER_HELMET)
+                .add(ModItems.SILVER_CHESTPLATE)
+                .add(ModItems.SILVER_LEGGINGS)
+                .add(ModItems.SILVER_BOOTS);
     }
 }

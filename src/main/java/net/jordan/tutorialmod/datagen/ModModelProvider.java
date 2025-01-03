@@ -6,6 +6,7 @@ import net.jordan.tutorialmod.block.ModBlocks;
 import net.jordan.tutorialmod.block.custom.PinkGarnetLamp;
 import net.jordan.tutorialmod.item.ModItems;
 import net.minecraft.data.client.*;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.util.Identifier;
 
 public class ModModelProvider extends FabricModelProvider
@@ -80,6 +81,11 @@ public class ModModelProvider extends FabricModelProvider
         itemModelGenerator.register(ModItems.PINK_GARNET_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.PINK_GARNET_HOE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.PINK_GARNET_HAMMER, Models.HANDHELD);
+
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.PINK_GARNET_HELMET);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.PINK_GARNET_CHESTPLATE);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.PINK_GARNET_LEGGINGS);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.PINK_GARNET_BOOTS);
         //endregion
 
         itemModelGenerator.register(ModItems.CAULIFLOWER, Models.GENERATED);
@@ -96,6 +102,11 @@ public class ModModelProvider extends FabricModelProvider
         itemModelGenerator.register(ModItems.SILVER_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.SILVER_HOE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.SILVER_HAMMER, Models.HANDHELD);
+
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.SILVER_HELMET);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.SILVER_CHESTPLATE);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.SILVER_LEGGINGS);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.SILVER_BOOTS);
         //endregion
     }
 }

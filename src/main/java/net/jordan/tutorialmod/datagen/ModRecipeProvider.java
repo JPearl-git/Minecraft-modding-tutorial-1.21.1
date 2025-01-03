@@ -26,6 +26,7 @@ public class ModRecipeProvider extends FabricRecipeProvider
         super(output, registriesFuture);
     }
 
+    //region Recipe Helper Functions
     public void createSwordRecipe(RecipeExporter exporter, RecipeCategory category, Item output, Item input)
     {
         ShapedRecipeJsonBuilder.create(category, output)
@@ -86,6 +87,63 @@ public class ModRecipeProvider extends FabricRecipeProvider
                 .offerTo(exporter);
     }
 
+    public void createHammerRecipe(RecipeExporter exporter, RecipeCategory category, Item output, Item input)
+    {
+        ShapedRecipeJsonBuilder.create(category, output)
+                .pattern("RRR")
+                .pattern("RRR")
+                .pattern(" S ")
+                .input('R', input)
+                .input('S', Items.STICK)
+                .criterion(hasItem(input), conditionsFromItem(input))
+                .offerTo(exporter);
+    }
+
+    public void createHelmetRecipe(RecipeExporter exporter, RecipeCategory category, Item output, Item input)
+    {
+        ShapedRecipeJsonBuilder.create(category, output)
+                .pattern("   ")
+                .pattern("RRR")
+                .pattern("R R")
+                .input('R', input)
+                .criterion(hasItem(input), conditionsFromItem(input))
+                .offerTo(exporter);
+    }
+
+    public void createChestplateRecipe(RecipeExporter exporter, RecipeCategory category, Item output, Item input)
+    {
+        ShapedRecipeJsonBuilder.create(category, output)
+                .pattern("R R")
+                .pattern("RRR")
+                .pattern("RRR")
+                .input('R', input)
+                .criterion(hasItem(input), conditionsFromItem(input))
+                .offerTo(exporter);
+    }
+
+    public void createLeggingsRecipe(RecipeExporter exporter, RecipeCategory category, Item output, Item input)
+    {
+        ShapedRecipeJsonBuilder.create(category, output)
+                .pattern("RRR")
+                .pattern("R R")
+                .pattern("R R")
+                .input('R', input)
+                .criterion(hasItem(input), conditionsFromItem(input))
+                .offerTo(exporter);
+    }
+
+    public void createBootsRecipe(RecipeExporter exporter, RecipeCategory category, Item output, Item input)
+    {
+        ShapedRecipeJsonBuilder.create(category, output)
+                .pattern("   ")
+                .pattern("R R")
+                .pattern("R R")
+                .input('R', input)
+                .criterion(hasItem(input), conditionsFromItem(input))
+                .offerTo(exporter);
+    }
+    //endregion
+
     @Override
     public void generate(RecipeExporter recipeExporter)
     {
@@ -102,6 +160,12 @@ public class ModRecipeProvider extends FabricRecipeProvider
         createPickaxeRecipe(recipeExporter, RecipeCategory.TOOLS, ModItems.PINK_GARNET_PICKAXE, ModItems.PINK_GARNET);
         createAxeRecipe(recipeExporter, RecipeCategory.TOOLS, ModItems.PINK_GARNET_AXE, ModItems.PINK_GARNET);
         createHoeRecipe(recipeExporter, RecipeCategory.TOOLS, ModItems.PINK_GARNET_HOE, ModItems.PINK_GARNET);
+        createHammerRecipe(recipeExporter, RecipeCategory.TOOLS, ModItems.PINK_GARNET_HAMMER, ModItems.PINK_GARNET);
+
+        createHelmetRecipe(recipeExporter, RecipeCategory.COMBAT, ModItems.PINK_GARNET_HELMET, ModItems.PINK_GARNET);
+        createChestplateRecipe(recipeExporter, RecipeCategory.COMBAT, ModItems.PINK_GARNET_CHESTPLATE, ModItems.PINK_GARNET);
+        createLeggingsRecipe(recipeExporter, RecipeCategory.COMBAT, ModItems.PINK_GARNET_LEGGINGS, ModItems.PINK_GARNET);
+        createBootsRecipe(recipeExporter, RecipeCategory.COMBAT, ModItems.PINK_GARNET_BOOTS, ModItems.PINK_GARNET);
 
         createStairsRecipe(ModBlocks.PINK_GARNET_STAIRS, Ingredient.ofItems(ModBlocks.PINK_GARNET_BLOCK))
                 .criterion(hasItem(ModBlocks.PINK_GARNET_BLOCK), conditionsFromItem(ModBlocks.PINK_GARNET_BLOCK))
@@ -153,6 +217,12 @@ public class ModRecipeProvider extends FabricRecipeProvider
         createPickaxeRecipe(recipeExporter, RecipeCategory.TOOLS, ModItems.SILVER_PICKAXE, ModItems.SILVER_INGOT);
         createAxeRecipe(recipeExporter, RecipeCategory.TOOLS, ModItems.SILVER_AXE, ModItems.SILVER_INGOT);
         createHoeRecipe(recipeExporter, RecipeCategory.TOOLS, ModItems.SILVER_HOE, ModItems.SILVER_INGOT);
+        createHammerRecipe(recipeExporter, RecipeCategory.TOOLS, ModItems.SILVER_HAMMER, ModItems.SILVER_INGOT);
+
+        createHelmetRecipe(recipeExporter, RecipeCategory.COMBAT, ModItems.SILVER_HELMET, ModItems.SILVER_INGOT);
+        createChestplateRecipe(recipeExporter, RecipeCategory.COMBAT, ModItems.SILVER_CHESTPLATE, ModItems.SILVER_INGOT);
+        createLeggingsRecipe(recipeExporter, RecipeCategory.COMBAT, ModItems.SILVER_LEGGINGS, ModItems.SILVER_INGOT);
+        createBootsRecipe(recipeExporter, RecipeCategory.COMBAT, ModItems.SILVER_BOOTS, ModItems.SILVER_INGOT);
 
         createStairsRecipe(ModBlocks.SILVER_STAIRS, Ingredient.ofItems(ModBlocks.SILVER_BLOCK))
                 .criterion(hasItem(ModBlocks.SILVER_BLOCK), conditionsFromItem(ModBlocks.SILVER_BLOCK))
