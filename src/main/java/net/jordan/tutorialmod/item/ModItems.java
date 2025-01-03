@@ -9,6 +9,7 @@ import net.minecraft.item.*;
 import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.resource.featuretoggle.FeatureFlags;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
@@ -122,6 +123,9 @@ public class ModItems
 
     // This creates our custom chisel item
     public static final Item CHISEL = registerItem("chisel", new ChiselItem(new Item.Settings().maxDamage(32)));
+
+    public static final Item KOCK_SMITHING_TEMPLATE = registerItem("kock_armor_trim_smithing_template",
+            SmithingTemplateItem.of(Identifier.of(TutorialMod.MOD_ID, "kock"), FeatureFlags.VANILLA));
 
     //This creates our custom food
     public static final Item CAULIFLOWER = registerItem("cauliflower", new Item(new Item.Settings().food(ModFoodComponents.CAULIFLOWER))

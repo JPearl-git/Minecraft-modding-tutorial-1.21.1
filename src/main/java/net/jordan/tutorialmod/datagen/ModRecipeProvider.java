@@ -288,5 +288,7 @@ public class ModRecipeProvider extends FabricRecipeProvider
                 .input(ModBlocks.MAGIC_BLOCK)
                 .criterion(hasItem(ModBlocks.MAGIC_BLOCK), conditionsFromItem(ModBlocks.MAGIC_BLOCK))
                 .offerTo(recipeExporter, Identifier.of(TutorialMod.MOD_ID, "raw_pink_garnet_from_magic_block"));
+
+        offerSmithingTrimRecipe(recipeExporter, ModItems.KOCK_SMITHING_TEMPLATE, Identifier.of(TutorialMod.MOD_ID, "kock"));
     }
 }

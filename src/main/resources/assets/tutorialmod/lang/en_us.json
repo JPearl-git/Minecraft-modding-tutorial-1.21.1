@@ -16,6 +16,8 @@
 
   "item.tutorialmod.pink_garnet_horse_armor": "Pink Garnet Horse Armor",
 
+  "item.tutorialmod.kock_armor_trim_smithing_template": "KOCK Smithing Template",
+
   "block.tutorialmod.pink_garnet_block": "Block of Pink Garnet",
   "block.tutorialmod.raw_pink_garnet_block": "Block of Raw Pink Garnet",
 
@@ -82,5 +84,10 @@
   "block.tutorialmod.silver_door": "Silver Door",
   "block.tutorialmod.silver_trapdoor": "Silver Trapdoor",
 
-  "itemgroup.tutorialmod.silver": "Silver"
+  "itemgroup.tutorialmod.silver": "Silver",
+
+  "trim_material.tutorialmod.pink_garnet": "Pink Garnet Material",
+  "trim_material.tutorialmod.silver": "Silver Material",
+
+  "trim_pattern.tutorialmod.kock": "KOCK Armor Pattern"
 }

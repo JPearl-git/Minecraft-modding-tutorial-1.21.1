@@ -57,5 +57,12 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider
                 .add(ModItems.SILVER_CHESTPLATE)
                 .add(ModItems.SILVER_LEGGINGS)
                 .add(ModItems.SILVER_BOOTS);
+
+        getOrCreateTagBuilder(ItemTags.TRIM_MATERIALS)
+                .add(ModItems.PINK_GARNET)
+                .add(ModItems.SILVER_INGOT);
+
+        getOrCreateTagBuilder(ItemTags.TRIM_TEMPLATES)
+                .add(ModItems.KOCK_SMITHING_TEMPLATE);
     }
 }

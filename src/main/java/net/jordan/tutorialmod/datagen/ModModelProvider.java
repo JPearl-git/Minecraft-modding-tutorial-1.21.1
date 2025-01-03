@@ -90,6 +90,8 @@ public class ModModelProvider extends FabricModelProvider
         itemModelGenerator.register(ModItems.PINK_GARNET_HORSE_ARMOR, Models.GENERATED);
         //endregion
 
+        itemModelGenerator.register(ModItems.KOCK_SMITHING_TEMPLATE, Models.GENERATED);
+
         itemModelGenerator.register(ModItems.CAULIFLOWER, Models.GENERATED);
         itemModelGenerator.register(ModItems.CHISEL, Models.GENERATED);
         itemModelGenerator.register(ModItems.STARLIGHT_ASHES, Models.GENERATED);
