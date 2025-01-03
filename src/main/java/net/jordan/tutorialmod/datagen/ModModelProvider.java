@@ -70,7 +70,7 @@ public class ModModelProvider extends FabricModelProvider
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator)
     {
-        //region Generate Pink Garnet Models
+        //region Generate Pink Garnet Item Models
         itemModelGenerator.register(ModItems.PINK_GARNET, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_PINK_GARNET, Models.GENERATED);
 
@@ -79,13 +79,14 @@ public class ModModelProvider extends FabricModelProvider
         itemModelGenerator.register(ModItems.PINK_GARNET_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.PINK_GARNET_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.PINK_GARNET_HOE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.PINK_GARNET_HAMMER, Models.HANDHELD);
         //endregion
 
         itemModelGenerator.register(ModItems.CAULIFLOWER, Models.GENERATED);
         itemModelGenerator.register(ModItems.CHISEL, Models.GENERATED);
         itemModelGenerator.register(ModItems.STARLIGHT_ASHES, Models.GENERATED);
 
-        //region Generate Silver Models
+        //region Generate Silver Item Models
         itemModelGenerator.register(ModItems.SILVER_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_SILVER, Models.GENERATED);
 
@@ -94,6 +95,7 @@ public class ModModelProvider extends FabricModelProvider
         itemModelGenerator.register(ModItems.SILVER_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.SILVER_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.SILVER_HOE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.SILVER_HAMMER, Models.HANDHELD);
         //endregion
     }
 }

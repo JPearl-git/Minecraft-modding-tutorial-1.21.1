@@ -3,6 +3,7 @@ package net.jordan.tutorialmod.item;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.jordan.tutorialmod.TutorialMod;
 import net.jordan.tutorialmod.item.custom.ChiselItem;
+import net.jordan.tutorialmod.item.custom.HammerItem;
 import net.minecraft.item.*;
 import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.registry.Registries;
@@ -40,6 +41,10 @@ public class ModItems
             new HoeItem(ModToolMaterials.PINK_GARNET, new Item.Settings()
                     .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.PINK_GARNET, 0, -3f))
             ));
+    public static final Item PINK_GARNET_HAMMER = registerItem("pink_garnet_hammer",
+            new HammerItem(ModToolMaterials.PINK_GARNET, new Item.Settings()
+                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.PINK_GARNET, 7, -3.4f))
+            ));
     //endregion
 
     //region Silver Items
@@ -65,6 +70,10 @@ public class ModItems
     public static final Item SILVER_HOE = registerItem("silver_hoe",
             new HoeItem(ModToolMaterials.SILVER, new Item.Settings()
                     .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.SILVER, 0, -3f))
+            ));
+    public static final Item SILVER_HAMMER = registerItem("silver_hammer",
+            new HammerItem(ModToolMaterials.SILVER, new Item.Settings()
+                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.SILVER, 7, -3.4f))
             ));
     //endregion
 

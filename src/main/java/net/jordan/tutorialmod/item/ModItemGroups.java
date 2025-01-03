@@ -27,6 +27,7 @@ public class ModItemGroups
                         entries.add(ModItems.PINK_GARNET_PICKAXE);
                         entries.add(ModItems.PINK_GARNET_AXE);
                         entries.add(ModItems.PINK_GARNET_HOE);
+                        entries.add(ModItems.PINK_GARNET_HAMMER);
 
                         entries.add(ModItems.CHISEL);
                         entries.add(ModItems.CAULIFLOWER);
@@ -79,6 +80,7 @@ public class ModItemGroups
                         entries.add(ModItems.SILVER_PICKAXE);
                         entries.add(ModItems.SILVER_AXE);
                         entries.add(ModItems.SILVER_HOE);
+                        entries.add(ModItems.SILVER_HAMMER);
 
                         entries.add(ModItems.RAW_SILVER);
                         entries.add(ModItems.SILVER_INGOT);
