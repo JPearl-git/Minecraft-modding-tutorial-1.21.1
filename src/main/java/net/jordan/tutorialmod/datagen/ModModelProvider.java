@@ -86,6 +86,8 @@ public class ModModelProvider extends FabricModelProvider
         itemModelGenerator.registerArmor((ArmorItem) ModItems.PINK_GARNET_CHESTPLATE);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.PINK_GARNET_LEGGINGS);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.PINK_GARNET_BOOTS);
+
+        itemModelGenerator.register(ModItems.PINK_GARNET_HORSE_ARMOR, Models.GENERATED);
         //endregion
 
         itemModelGenerator.register(ModItems.CAULIFLOWER, Models.GENERATED);
@@ -107,6 +109,8 @@ public class ModModelProvider extends FabricModelProvider
         itemModelGenerator.registerArmor((ArmorItem) ModItems.SILVER_CHESTPLATE);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.SILVER_LEGGINGS);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.SILVER_BOOTS);
+
+        itemModelGenerator.register(ModItems.SILVER_HORSE_ARMOR, Models.GENERATED);
         //endregion
     }
 }

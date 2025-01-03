@@ -14,6 +14,8 @@
   "item.tutorialmod.pink_garnet_leggings": "Pink Garnet Leggings",
   "item.tutorialmod.pink_garnet_boots": "Pink Garnet Boots",
 
+  "item.tutorialmod.pink_garnet_horse_armor": "Pink Garnet Horse Armor",
+
   "block.tutorialmod.pink_garnet_block": "Block of Pink Garnet",
   "block.tutorialmod.raw_pink_garnet_block": "Block of Raw Pink Garnet",
 
@@ -57,11 +59,12 @@
   "item.tutorialmod.silver_hoe": "Silver Hoe",
   "item.tutorialmod.silver_hammer": "Silver Hammer",
 
-
   "item.tutorialmod.silver_helmet": "Silver Helmet",
   "item.tutorialmod.silver_chestplate": "Silver Chestplate",
   "item.tutorialmod.silver_leggings": "Silver Leggings",
   "item.tutorialmod.silver_boots": "Silver Boots",
+
+  "item.tutorialmod.silver_horse_armor": "Silver Horse Armor",
 
   "block.tutorialmod.silver_block": "Block of Silver",
   "block.tutorialmod.raw_silver_block": "Block of Raw Silver",

@@ -34,6 +34,8 @@ public class ModItemGroups
                         entries.add(ModItems.PINK_GARNET_LEGGINGS);
                         entries.add(ModItems.PINK_GARNET_BOOTS);
 
+                        entries.add(ModItems.PINK_GARNET_HORSE_ARMOR);
+
                         entries.add(ModItems.CHISEL);
                         entries.add(ModItems.CAULIFLOWER);
                         entries.add(ModItems.STARLIGHT_ASHES);
@@ -91,6 +93,8 @@ public class ModItemGroups
                         entries.add(ModItems.SILVER_CHESTPLATE);
                         entries.add(ModItems.SILVER_LEGGINGS);
                         entries.add(ModItems.SILVER_BOOTS);
+
+                        entries.add(ModItems.SILVER_HORSE_ARMOR);
 
                         entries.add(ModItems.RAW_SILVER);
                         entries.add(ModItems.SILVER_INGOT);

@@ -63,6 +63,10 @@ public class ModItems
             new ArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
                     .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(15))
             ));
+
+    public static final Item PINK_GARNET_HORSE_ARMOR = registerItem("pink_garnet_horse_armor",
+            new AnimalArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL, AnimalArmorItem.Type.EQUESTRIAN,
+                    false, new Item.Settings().maxCount(1)));
     //endregion
 
     //region Silver Items
@@ -93,6 +97,7 @@ public class ModItems
             new HammerItem(ModToolMaterials.SILVER, new Item.Settings()
                     .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.SILVER, 7, -3.4f))
             ));
+
     public static final Item SILVER_HELMET = registerItem("silver_helmet",
             new ModArmorItem(ModArmorMaterials.SILVER_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
                     .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(15))
@@ -109,6 +114,10 @@ public class ModItems
             new ArmorItem(ModArmorMaterials.SILVER_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
                     .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(15))
             ));
+
+    public static final Item SILVER_HORSE_ARMOR = registerItem("silver_horse_armor",
+            new AnimalArmorItem(ModArmorMaterials.SILVER_ARMOR_MATERIAL, AnimalArmorItem.Type.EQUESTRIAN,
+                    false, new Item.Settings().maxCount(1)));
     //endregion
 
     // This creates our custom chisel item
