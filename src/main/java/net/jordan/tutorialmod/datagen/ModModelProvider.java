@@ -3,10 +3,10 @@ package net.jordan.tutorialmod.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.jordan.tutorialmod.block.ModBlocks;
+import net.jordan.tutorialmod.block.custom.PinkGarnetLamp;
 import net.jordan.tutorialmod.item.ModItems;
-import net.minecraft.data.client.BlockStateModelGenerator;
-import net.minecraft.data.client.ItemModelGenerator;
-import net.minecraft.data.client.Models;
+import net.minecraft.data.client.*;
+import net.minecraft.util.Identifier;
 
 public class ModModelProvider extends FabricModelProvider
 {
@@ -59,6 +59,12 @@ public class ModModelProvider extends FabricModelProvider
         //endregion
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MAGIC_BLOCK);
+
+        // Block states for pink garnet lamp
+        Identifier pgLampOffIdentifier = TexturedModel.CUBE_ALL.upload(ModBlocks.PINK_GANRET_LAMP, blockStateModelGenerator.modelCollector);
+        Identifier pgLampOnIdentifier = blockStateModelGenerator.createSubModel(ModBlocks.PINK_GANRET_LAMP, "_on", Models.CUBE_ALL, TextureMap::all);
+        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.PINK_GANRET_LAMP)
+                .coordinate(BlockStateModelGenerator.createBooleanModelMap(PinkGarnetLamp.CLICKED, pgLampOnIdentifier, pgLampOffIdentifier)));
     }
 
     @Override

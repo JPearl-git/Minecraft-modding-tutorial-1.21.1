@@ -3,6 +3,7 @@ package net.jordan.tutorialmod.block;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.jordan.tutorialmod.TutorialMod;
 import net.jordan.tutorialmod.block.custom.MagicBlock;
+import net.jordan.tutorialmod.block.custom.PinkGarnetLamp;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -199,7 +200,12 @@ public class ModBlocks
                     .requiresTool()
             ));
 
-
+    public static final Block PINK_GANRET_LAMP = registerBlock("pink_garnet_lamp",
+            new PinkGarnetLamp(AbstractBlock.Settings.create()
+                    .strength(1f)
+                    .requiresTool()
+                    .luminance(state -> state.get(PinkGarnetLamp.CLICKED) ? 15 : 0)
+            ));
 
     /*
     REQUIRED FUNCTIONS

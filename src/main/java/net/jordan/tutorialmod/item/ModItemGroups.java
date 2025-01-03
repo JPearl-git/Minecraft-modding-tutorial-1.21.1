@@ -28,10 +28,10 @@ public class ModItemGroups
                     }).build());
 
     public static final ItemGroup PINK_GARNET_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
-            Identifier.of(TutorialMod.MOD_ID, "pink_garnet_blocks"),
+            Identifier.of(TutorialMod.MOD_ID, "pink_garnet_block"),
             FabricItemGroup.builder()
                     .icon(() -> new ItemStack(ModBlocks.PINK_GARNET_BLOCK))
-                    .displayName((Text.translatable("itemgroup.tutorialmod.pink_garnet_blocks")))
+                    .displayName((Text.translatable("itemgroup.tutorialmod.pink_garnet_block")))
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.PINK_GARNET_BLOCK);
                         entries.add(ModBlocks.RAW_PINK_GARNET_BLOCK);
@@ -53,6 +53,8 @@ public class ModItemGroups
 
                         entries.add(ModBlocks.PINK_GARNET_DOOR);
                         entries.add(ModBlocks.PINK_GARNET_TRAPDOOR);
+
+                        entries.add(ModBlocks.PINK_GANRET_LAMP);
                     }).build());
 
     public static final ItemGroup SILVER_GROUP = Registry.register(Registries.ITEM_GROUP,
