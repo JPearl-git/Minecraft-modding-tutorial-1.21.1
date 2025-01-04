@@ -93,7 +93,7 @@ public class ModModelProvider extends FabricModelProvider
         itemModelGenerator.register(ModItems.KOCK_SMITHING_TEMPLATE, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.CAULIFLOWER, Models.GENERATED);
-        itemModelGenerator.register(ModItems.CHISEL, Models.GENERATED);
+        //itemModelGenerator.register(ModItems.CHISEL, Models.GENERATED);
         itemModelGenerator.register(ModItems.STARLIGHT_ASHES, Models.GENERATED);
 
         //region Generate Silver Item Models
